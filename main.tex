@@ -4,6 +4,7 @@
 \usecolortheme{default}
 
 \usepackage{cmap}                   % поиск в PDF
+\usepackage{braket}
 \usepackage[T2A]{fontenc}           % кодировка
 \usepackage{mathtext}               % русские буквы в формулах
 \usepackage[utf8]{inputenc}         % кодировка исходного текста
@@ -27,8 +28,9 @@
             \item Введение в квантовые вычисления
 
                 \begin{itemize}
-                    \item История квантовых компьютеров
-                    \item Отличия квантовых компьютеров от классических компьютеров
+                    \item Классический бит и квантовый бит
+                    \item 
+
                 \end{itemize}
 
             \item Принцип работы ионной ловушки
@@ -44,5 +46,27 @@
         \end{itemize}
 
     \end{frame}
+
+	\begin{frame}{Введение в квантовые вычисления}
+	\framesubtitle{Классический бит и квантовый бит}
+	Классический бит: $0$ или $1$ - два состояния.
+	\vspace{3mm}
+	
+	Квантовый бит: $\ket{\psi} = \alpha\ket{0} + \beta\ket{1}$, $\alpha,\beta \in \mathbb{C}$, $|\alpha|^2 + |\beta|^2 = 1$ - бесконечно много состояний?
+	\vspace{3mm}
+	
+	Представление на сфере Блоха: $\ket{\psi} = e^{i\gamma}\left(  \cos{\frac{\theta}{2}}\ket{0}+e^{i\phi}\sin{\frac{\theta}{2}} \ket{1}  \right) \sim \cos{\frac{\theta}{2}}\ket{0}+e^{i\phi}\sin{\frac{\theta}{2}} \ket{1} $,
+	
+	где $\gamma, \theta$ и $\phi$ - действительные числа.
+	\end{frame}
     
+    \begin{frame}{Введение в квантовые вычисления}
+    \framesubtitle{Классический бит и квантовый бит}
+    
+    \begin{figure}[]
+    	\includegraphics[width=\linewidth]{media/qubits.pdf}
+    \end{figure}
+    
+	\end{frame}
+
 \end{document}
