@@ -8,6 +8,7 @@
 \usepackage{mathtext}               % русские буквы в формулах
 \usepackage[utf8]{inputenc}         % кодировка исходного текста
 \usepackage[english,russian]{babel} % локализация и переносы
+\usepackage{multimedia}                 % вставка видео
 
 \title{Реализация квантового компьютера на ионной ловушке}
 \subtitle{Вопрос по выбору к ГКЭ, январь 2022}
@@ -47,7 +48,6 @@
                     \item{Оптическая накачка}
                     \item{Измерение конечного результата}
 
-                    
                 \end{itemize}
             
             \end{itemize}
@@ -75,8 +75,8 @@
 	\end{frame}
 
 
-    \begin{frame}{Принцип работы ионной ловушки}
-    \framesubtitle{Доплеровское охлаждение}
+    \begin{frame}{Доплеровское охлаждение}
+    \framesubtitle{Принцип работы ионной ловушки}
 
         \begin{columns}
 
@@ -104,8 +104,8 @@
         \end{columns}
     \end{frame}
 
-    \begin{frame}{Принцип работы ионной ловушки}
-    \framesubtitle{Доплеровское охлаждение}
+    \begin{frame}{Доплеровское охлаждение}
+    \framesubtitle{Принцип работы ионной ловушки}
         \begin{columns}
 
         \begin{column}{0.5\textwidth}
@@ -129,20 +129,21 @@
 
     \end{frame}
 
-    \begin{frame}{Принцип работы ионной ловушки}
-    \framesubtitle{Доплеровское охлаждение}
+    \begin{frame}{Захват ионов}
+    \framesubtitle{Принцип работы ионной ловушки}
 
         \begin{columns}
 
         \begin{column}{0.5\textwidth}
 
             \begin{itemize}
-                \item[1.] <1-> Покоящийся атом, смещения по частоте нет, налетающий фотон
-                               не поглощается
-                \item[2.] <2-> Атом движется. Смещение по частоте в область красного спектра,
-                               поглощение фотона не происходит
-                \item[3.1] <3-> Атом движется. Смещение по частоте в область синего спектра,
-                                происходит поглощение фотона.
+                \only<1>{\item Мы рассматриваем ловушку Пауля. Данный тип ионной ловушки представляет собой систему электродов, между которыми находятся ионы.}
+                \item<2-> Для содержания ионов в замкнутой области пространства используется
+                      периодическая смена напряжения электрического поля на обоих электродах:
+                      $E_x = - \frac{U + V \cos{\omega t}}{r_{0}^2} x$,
+                      $E_z = \frac{U + V \cos{\omega t}}{r_{0}^2} z$
+                      $E_y = 0$
+                \item<2-> $U$ - постоянное напряжение, $V$ - напряжение на частоте $\omega$
             \end{itemize}
 
         \end{column}
@@ -150,13 +151,52 @@
         \begin{column}{0.5\textwidth}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.35\textwidth]{media/dopler-cooling.png}
-                \caption{Иллюстрация доплеровского охлаждения}
+                \includegraphics[width=\textwidth]{media/trapped-ion.jpg}
+                \caption{Захваченный ион}
             \end{figure}
         \end{column}
 
         \end{columns}
     \end{frame}
+
+
+
+    \begin{frame}{Захват ионов}
+    \framesubtitle{Принцип работы ионной ловушки}
+
+        \begin{columns}
+
+        \begin{column}{0.5\textwidth}
+
+            \begin{itemize}
+                \item Получаем эффект динамической стабилизации: потенциал в ловушке представляет собой геометрически поверхность седла.
+                \item В статике положение равновесие шарика (механический аналог иона) в этом седле будет неустойчиво.
+                \item В то время как если систему вращать вокруг оси, проходящей через центр седла перпендикулярно плоскости $x - y$, то система
+                будет устойчива.
+            \end{itemize}
+
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{media/trap-potential.png}
+                \caption{Захваченный ион}
+            \end{figure}
+        \end{column}
+
+        \end{columns}
+
+        \end{frame}
+
+    % \begin{frame}{Захват ионов}
+    % \framesubtitle{Принцип работы ионной ловушки}
+
+    %     \movie{\includegraphics[width=\textheight,
+    %                      keepaspectratio]
+    %                      {media/trapped-ion.jpg}}{media/paul-trap.mp4}
+
+    % \end{frame}
 
     \begin{frame}{Реализация свойств квантового компьютера}
     \framesubtitle{Представление кубита}
@@ -176,7 +216,7 @@
         \begin{column}{0.4\textwidth}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.35\textwidth]{media/nine-calcium-ions.jpg}
+                \includegraphics[width=\textwidth]{media/nine-calcium-ions.jpg}
                 \caption{Девять атома кальция в ловушке}
             \end{figure}
         \end{column}
@@ -241,7 +281,7 @@
 
             \begin{figure}
                 \centering
-                \includegraphics[width=0.35\textwidth]{media/optical-pumping.png}
+                \includegraphics[width=\textwidth]{media/optical-pumping.png}
                 \caption{Оптическая накачка лазерного стержня дуговой лампой}
             \end{figure}
 
