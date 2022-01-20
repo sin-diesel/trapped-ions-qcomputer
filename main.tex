@@ -1,3 +1,5 @@
+%Формулы Матье, быстроосцилирующее напряжение, статический потенциал kU0 (z^2 - (x^2 + y^2) / 2
+
 \documentclass{beamer}
 \usetheme{Berlin}
 \usecolortheme{default}
@@ -63,26 +65,95 @@
         \end{frame}
 
 	\begin{frame}{Введение в квантовые вычисления}
-	Классический бит: $0$ или $1$ - два состояния.
-	\vspace{3mm}
-	
-	Квантовый бит: $\ket{\psi} = \alpha\ket{0} + \beta\ket{1}$, $\alpha,\beta \in \mathbb{C}$, $|\alpha|^2 + |\beta|^2 = 1$ - бесконечно много состояний?
-	\vspace{3mm}
-	
-	Представление на сфере Блоха: $\ket{\psi} = e^{i\gamma}\left(  \cos{\frac{\theta}{2}}\ket{0}+e^{i\phi}\sin{\frac{\theta}{2}} \ket{1}  \right) \sim \cos{\frac{\theta}{2}}\ket{0}+e^{i\phi}\sin{\frac{\theta}{2}} \ket{1} $,
-	
-	где $\gamma, \theta$ и $\phi$ - действительные числа.
+		Классический бит: $0$ или $1$ - два состояния.
+		\vspace{3mm}
+		
+		Квантовый бит: $\ket{\psi} = \alpha\ket{0} + \beta\ket{1}$, $\alpha,\beta \in \mathbb{C}$, $|\alpha|^2 + |\beta|^2 = 1$ - бесконечно много состояний?
+		\vspace{3mm}
+		
+		Представление на сфере Блоха: $\ket{\psi} = e^{i\gamma}\left(  \cos{\frac{\theta}{2}}\ket{0}+e^{i\phi}\sin{\frac{\theta}{2}} \ket{1}  \right) \sim \cos{\frac{\theta}{2}}\ket{0}+e^{i\phi}\sin{\frac{\theta}{2}} \ket{1} $,
+		
+		где $\gamma, \theta$ и $\phi$ - действительные числа.
 	\end{frame}
-    
+	
+	\begin{frame}{Введение в квантовые вычисления}
+		
+		\begin{figure}[]
+			\includegraphics[width=\linewidth]{media/qubits.pdf}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{Захват ионов}
+		\framesubtitle{Принцип работы ионной ловушки}
+		
+		\begin{columns}
+			
+			\begin{column}{0.5\textwidth}
+				
+				\begin{itemize}
+					\only<1>{\item Мы рассматриваем ловушку Пауля. Данный тип ионной ловушки представляет собой систему электродов, между которыми находятся ионы.}
+					\item<2-> Для содержания ионов в замкнутой области пространства используется
+					периодическая смена напряжения электрического поля на обоих электродах:
+					$E_x = - \frac{U + V \cos{\omega t}}{r_{0}^2} x$,
+					$E_z = \frac{U + V \cos{\omega t}}{r_{0}^2} z$
+					$E_y = 0$
+					\item<2-> $U$ - постоянное напряжение, $V$ - напряжение на частоте $\omega$
+				\end{itemize}
+				
+			\end{column}
+			
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{media/trapped-ion.jpg}
+					\caption{Захваченный ион}
+				\end{figure}
+			\end{column}
+			
+		\end{columns}
+	\end{frame}
+	
+	
+	
+	\begin{frame}{Захват ионов}
+		\framesubtitle{Принцип работы ионной ловушки}
+		
+		\begin{columns}
+			
+			\begin{column}{0.5\textwidth}
+				
+				\begin{itemize}
+					\only<1>{\item Получаем эффект динамической стабилизации: потенциал в ловушке представляет собой геометрически поверхность седла.}
+					\item<2-> В статике положение равновесие шарика (механический аналог иона) в этом седле будет неустойчиво.
+					\item<2-> В то время как если систему вращать вокруг оси, проходящей через центр седла перпендикулярно плоскости $xy$, то система
+					будет устойчива.
+				\end{itemize}
+				
+			\end{column}
+			
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{media/trap-potential.png}
+					\caption{Захваченный ион}
+				\end{figure}
+			\end{column}
+			
+		\end{columns}
+		
+	\end{frame}
+
     \begin{frame}{Введение в квантовые вычисления}
 
     \begin{figure}[]
     	\includegraphics[width=\linewidth]{media/qubits.pdf}
     \end{figure}
+
 	\end{frame}
 
-    \begin{frame}{Захват ионов}
-    \framesubtitle{Принцип работы ионной ловушки}
+    \begin{frame}{Принцип работы ионной ловушки}
+    \framesubtitle{Доплеровское охлаждение}
+
 
         \begin{columns}
 
@@ -230,6 +301,7 @@
         \end{column}
 
         \end{columns}
+
     \end{frame}
 
     \begin{frame}{Приготовление начального состояния}
@@ -274,7 +346,3 @@
     \begin{frame}{Измерение состояния}
 
     \end{frame}
-
-
-
-\end{document}
