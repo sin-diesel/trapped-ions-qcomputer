@@ -311,7 +311,7 @@
 
     \end{frame}
 
-    \begin{frame}{Приготовление начального состояния}
+    \begin{frame}{Физическая реализация кубита}
     \framesubtitle{Кубитная ионная ловушка}
 
     \begin{itemize}
@@ -679,6 +679,67 @@
     \begin{column}{0.5\textwidth}
 
         \begin{itemize}
+                \only<1>{\item Рассмотрим энергетические переходы в ионе кальция
+                \item Учитывая, что времена жизни должны быть порядка микросекунд
+                      для совершения квантовых операций, получим, что некоторые состояния
+                      не годятся для выбора в качестве состояния $\ket{1}$}
+                \only<2>{\item Например, состояние $3D_{5/2}$ Обладает временем жизни $1.2$ с. Это время жизни годится, так как квантовые операции занимают микросекунды. За время состояние системы не успеет поменяться. }
+        \end{itemize}
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{media/transitions.png}
+            \caption{Возможные энергетические переходы}
+        \end{figure}
+
+    \end{column}
+
+    \end{columns}
+    
+    \end{frame}
+
+    \begin{frame}{Физическая реализация кубита}
+    \framesubtitle{Кубитная ионная ловушка}
+
+    \begin{columns}
+
+    \begin{column}{0.5\textwidth}
+
+        \begin{itemize}
+                \item Кубит на сверхтонкой структуре - время существование существенно больше
+                \item Можно рассмотреть на примере иона кальция с уровнем $4S_{1/2}$
+        \end{itemize}
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{media/hyperfine-structure.png}
+            \caption{Сверхтонкая структура}
+        \end{figure}
+
+    \end{column}
+
+    \end{columns}
+
+    \end{frame}
+
+
+
+    \begin{frame}{Приготовление начального состояния}
+    \framesubtitle{Кубитная ионная ловушка}
+
+    \begin{columns}
+
+    \begin{column}{0.5\textwidth}
+
+        \begin{itemize}
                 \item Ионизация вещества
                 \item Заключение в ионную ловушку
                 \item Доплеровское охлаждение
@@ -693,37 +754,6 @@
         \begin{figure}
             \centering
             \includegraphics[width=\textwidth]{media/emission-comparison.png}
-            \caption{Спонтанное и вынужденное излучение}
-        \end{figure}
-
-    \end{column}
-
-    \end{columns}
-
-
-    \end{frame}
-
-    \begin{frame}{Приготовление начального состояния}
-    \framesubtitle{Кубитная ионная ловушка}
-
-    \begin{columns}
-
-    \begin{column}{0.5\textwidth}
-
-        \begin{itemize}
-                \item Рассмотрим энергетические переходы в ионе кальция
-                \item Учитывая, что времена жизни должны быть порядка микросекунд
-                      для совершения квантовых операций, получим, что некоторые состояния
-                      не годятся для выбора в качестве состояния $\ket{1}$
-        \end{itemize}
-
-    \end{column}
-
-    \begin{column}{0.5\textwidth}
-
-        \begin{figure}
-            \centering
-            \includegraphics[width=\textwidth]{media/transitions.png}
             \caption{Спонтанное и вынужденное излучение}
         \end{figure}
 
