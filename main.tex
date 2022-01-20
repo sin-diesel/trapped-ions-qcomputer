@@ -27,7 +27,10 @@
 % 4) Проверить всю презентацию на ошибки
 
 \begin{document}
+<<<<<<< HEAD
 
+=======
+>>>>>>> Подредачил текст речи
     
     \begin{frame}
         \titlepage
@@ -55,6 +58,10 @@
 
 
                     \item{Физическая реализация кубита}
+<<<<<<< HEAD
+=======
+                    \item{Приготовление начального состояния}
+>>>>>>> Подредачил текст речи
                     \item{Измерение конечного результата}
 
                 \end{itemize}
@@ -64,6 +71,7 @@
                 
         \end{frame}
 
+<<<<<<< HEAD
 	
 	\begin{frame}
 		\titlepage
@@ -103,6 +111,8 @@
 	\end{frame}
 	
 
+=======
+>>>>>>> Подредачил текст речи
 	\begin{frame}{Введение в квантовые вычисления}
 		Классический бит: $0$ или $1$ - два состояния.
 		\vspace{3mm}
@@ -547,3 +557,202 @@
 	
 \end{document}
 
+=======
+	\end{frame}
+
+    \begin{frame}{Принцип работы ионной ловушки}
+    \framesubtitle{Доплеровское охлаждение}
+
+
+        \begin{columns}
+
+        \begin{column}{0.5\textwidth}
+
+            \begin{itemize}
+                \only<1>{\item Мы рассматриваем ловушку Пауля. Данный тип ионной ловушки представляет собой систему электродов, между которыми находятся ионы.}
+                \item<2-> Для содержания ионов в замкнутой области пространства используется
+                      периодическая смена напряжения электрического поля на обоих электродах:
+                      $E_x = - \frac{U + V \cos{\omega t}}{r_{0}^2} x$,
+                      $E_z = \frac{U + V \cos{\omega t}}{r_{0}^2} z$
+                      $E_y = 0$
+                \item<2-> $U$ - постоянное напряжение, $V$ - напряжение на частоте $\omega$
+            \end{itemize}
+
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{media/trapped-ion.jpg}
+                \caption{Захваченный ион}
+            \end{figure}
+        \end{column}
+
+        \end{columns}
+    \end{frame}
+
+
+
+    \begin{frame}{Захват ионов}
+    \framesubtitle{Принцип работы ионной ловушки}
+
+        \begin{columns}
+
+        \begin{column}{0.5\textwidth}
+
+            \begin{itemize}
+                \only<1>{\item Получаем эффект динамической стабилизации: потенциал в ловушке представляет собой геометрически поверхность седла.}
+                \item<2-> В статике положение равновесие шарика (механический аналог иона) в этом седле будет неустойчиво.
+                \item<2-> В то время как если систему вращать вокруг оси, проходящей через центр седла перпендикулярно плоскости $xy$, то система
+                будет устойчива.
+            \end{itemize}
+
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{media/trap-potential.png}
+                \caption{Захваченный ион}
+            \end{figure}
+        \end{column}
+
+        \end{columns}
+
+        \end{frame}
+
+
+    \begin{frame}{Доплеровское охлаждение}
+    \framesubtitle{Принцип работы ионной ловушки}
+
+        \begin{columns}
+
+        \begin{column}{0.5\textwidth}
+
+            \begin{itemize}
+                \item[1.] <1-> Покоящийся атом, смещения по частоте нет, налетающий фотон
+                               не поглощается
+                \item[2.] <2-> Атом движется. Смещение по частоте в область красного спектра,
+                               поглощение фотона не происходит
+                \item[3.1] <3-> Атом движется. Смещение по частоте в область синего спектра,
+                                происходит поглощение фотона.
+            \end{itemize}
+
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.35\textwidth]{media/dopler-cooling.png}
+                \caption{Иллюстрация доплеровского охлаждения}
+            \end{figure}
+        \end{column}
+
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Доплеровское охлаждение}
+    \framesubtitle{Принцип работы ионной ловушки}
+        \begin{columns}
+
+        \begin{column}{0.5\textwidth}
+
+            \begin{itemize}
+                \item[3.2] <1-> Атом возбуждается
+                \item[3.3] <2-> Атом излучает в случайном направлении
+            \end{itemize}
+
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.35\textwidth]{media/dopler-cooling.png}
+                \caption{Иллюстрация доплеровского охлаждения}
+            \end{figure}
+        \end{column}
+
+        \end{columns}
+
+    \end{frame}
+
+
+    % \begin{frame}{Захват ионов}
+    % \framesubtitle{Принцип работы ионной ловушки}
+
+    %     \movie{\includegraphics[width=\textheight,
+    %                      keepaspectratio]
+    %                      {media/trapped-ion.jpg}}{media/paul-trap.mp4}
+
+    % \end{frame}
+
+    \begin{frame}{Физическая реализация кубита}
+    \framesubtitle{Кубитная ионная ловушка}
+
+        \begin{columns}
+
+        \begin{column}{0.6\textwidth}
+
+            \begin{itemize}
+                \item <1-> Кубит представляет собой атомные состояния сверхтонкой структуры удерживаемых в ловушке атомов. 
+                \item <2-> Два сверхтонких уровня основного состояния (они называются «сверхтонкими кубитами»)
+                \item <3-> Уровень основного состояния и возбужденный уровень (они называются «оптическими кубитами»)
+            \end{itemize}
+
+        \end{column}
+
+        \begin{column}{0.4\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{media/nine-calcium-ions.jpg}
+                \caption{Девять атома кальция в ловушке}
+            \end{figure}
+        \end{column}
+
+        \end{columns}
+
+    \end{frame}
+
+    \begin{frame}{Приготовление начального состояния}
+    \framesubtitle{Кубитная ионная ловушка}
+
+    \begin{columns}
+
+    \begin{column}{0.5\textwidth}
+
+        \begin{itemize}
+                \item <1-> Состояния ионных кубитов могут быть приготовлены в определенном состоянии кубита с помощью процесса, называемого \textbf{оптической накачкой}.
+                \item <2-> Данный процесс
+        \end{itemize}
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{media/optical-pumping.png}
+            \caption{Оптическая накачка лазерного стержня дуговой лампой}
+        \end{figure}
+
+    \end{column}
+
+    \end{columns}
+
+
+    \end{frame}
+
+    \begin{frame}{Приготовление начального состояния}
+    \framesubtitle{Кубитная ионная ловушка}
+
+    \begin{itemize}
+            \item <1-> Если ион распадается до одного из других состояний, лазер будет продолжать возбуждать ион до тех пор, пока он не распадется до состояния, которое не взаимодействует с лазером. Этот процесс инициализации является стандартным для многих физических экспериментов и может выполняться с очень высокой точностью (> 99,9)
+    \end{itemize}
+
+    \end{frame}
+
+
+    \begin{frame}{Измерение состояния}
+
+    \end{frame}
+>>>>>>> Подредачил текст речи
