@@ -27,6 +27,7 @@
 % 4) Проверить всю презентацию на ошибки
 
 \begin{document}
+
     
     \begin{frame}
         \titlepage
@@ -62,6 +63,45 @@
 
                 
         \end{frame}
+
+	
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	
+	\begin{frame}{Содержание}
+		
+		\begin{itemize}
+			
+			\item<1-> Введение в квантовые вычисления
+			
+			
+			
+			\item<2-> Принцип работы ионной ловушки
+			
+			\begin{itemize}
+				\item{Захват иона}
+				\item{Доплеровское охлаждение}
+				\item{Pro \& Contra}
+			\end{itemize}
+			
+			\item<3-> Кубит на ионной ловушке
+			
+			\begin{itemize}
+				
+				
+				\item{Физическая реализация кубита}
+				\item{Приготовление начального состояния}
+				\item{Оптическая накачка}
+				\item{Измерение конечного результата}
+				
+			\end{itemize}
+			
+		\end{itemize}
+		
+		
+	\end{frame}
+	
 
 	\begin{frame}{Введение в квантовые вычисления}
 		Классический бит: $0$ или $1$ - два состояния.
@@ -141,6 +181,7 @@
 		\end{columns}
 		
 	\end{frame}
+<<<<<<< HEAD
 
     \begin{frame}{Введение в квантовые вычисления}
 
@@ -359,5 +400,151 @@
 
 
 
+\end{document}
+
+	
+	\begin{frame}{Доплеровское охлаждение}
+		\framesubtitle{Принцип работы ионной ловушки}
+		
+		\begin{columns}
+			
+			\begin{column}{0.5\textwidth}
+				
+				\begin{itemize}
+					\item[1.] <1-> Покоящийся атом, смещения по частоте нет, налетающий фотон
+					не поглощается
+					\item[2.] <2-> Атом движется. Смещение по частоте в область красного спектра,
+					поглощение фотона не происходит
+					\item[3.1] <3-> Атом движется. Смещение по частоте в область синего спектра,
+					происходит поглощение фотона.
+				\end{itemize}
+				
+			\end{column}
+			
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.35\textwidth]{media/dopler-cooling.png}
+					\caption{Иллюстрация доплеровского охлаждения}
+				\end{figure}
+			\end{column}
+			
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Доплеровское охлаждение}
+		\framesubtitle{Принцип работы ионной ловушки}
+		\begin{columns}
+			
+			\begin{column}{0.5\textwidth}
+				
+				\begin{itemize}
+					\item[3.2] <1-> Атом возбуждается
+					\item[3.3] <2-> Атом излучает в случайном направлении
+				\end{itemize}
+				
+			\end{column}
+			
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.35\textwidth]{media/dopler-cooling.png}
+					\caption{Иллюстрация доплеровского охлаждения}
+				\end{figure}
+			\end{column}
+			
+		\end{columns}
+		
+	\end{frame}
+	
+	
+	% \begin{frame}{Захват ионов}
+	% \framesubtitle{Принцип работы ионной ловушки}
+	
+	%     \movie{\includegraphics[width=\textheight,
+	%                      keepaspectratio]
+	%                      {media/trapped-ion.jpg}}{media/paul-trap.mp4}
+	
+	% \end{frame}
+	
+	\begin{frame}{Физическая реализация кубита}
+		\framesubtitle{Кубитная ионная ловушка}
+		
+		\begin{columns}
+			
+			\begin{column}{0.6\textwidth}
+				
+				\begin{itemize}
+					\item <1-> Кубит представляет собой атомные состояния сверхтонкой структуры удерживаемых в ловушке атомов. 
+					\item <2-> Два сверхтонких уровня основного состояния (они называются «сверхтонкими кубитами»)
+					\item <3-> Уровень основного состояния и возбужденный уровень (они называются «оптическими кубитами»)
+				\end{itemize}
+				
+			\end{column}
+			
+			\begin{column}{0.4\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{media/nine-calcium-ions.jpg}
+					\caption{Девять атома кальция в ловушке}
+				\end{figure}
+			\end{column}
+			
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Приготовление начального состояния}
+		\framesubtitle{Кубитная ионная ловушка}
+		
+		\begin{itemize}
+			\item <1-> Состояния ионных кубитов могут быть приготовлены в определенном состоянии кубита с помощью процесса, называемого \textbf{оптической накачкой}. В этом процессе лазер связывает ион с некоторыми возбужденными состояниями, которые в конечном итоге распадаются до одного состояния, которое не связано с лазером.
+			\item <2-> Как только ион достигает этого состояния, у него нет возбужденных уровней, с которыми можно было бы взаимодействовать в присутствии этого лазера, и, следовательно, он остается в этом состоянии.
+		\end{itemize}
+		
+		
+	\end{frame}
+	
+	\begin{frame}{Приготовление начального состояния}
+		\framesubtitle{Кубитная ионная ловушка}
+		
+		\begin{itemize}
+			\item <1-> Если ион распадается до одного из других состояний, лазер будет продолжать возбуждать ион до тех пор, пока он не распадется до состояния, которое не взаимодействует с лазером. Этот процесс инициализации является стандартным для многих физических экспериментов и может выполняться с очень высокой точностью (> 99,9)
+		\end{itemize}
+		
+	\end{frame}
+	
+	\begin{frame}{Оптическая накачка}
+		\framesubtitle{Кубитная ионная ловушка}
+		
+		\begin{columns}
+			
+			\begin{column}{0.5\textwidth}
+				
+				\begin{itemize}
+					\item 
+				\end{itemize}
+				
+			\end{column}
+			
+			\begin{column}{0.5\textwidth}
+				
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth]{media/optical-pumping.png}
+					\caption{Оптическая накачка лазерного стержня дуговой лампой}
+				\end{figure}
+				
+			\end{column}
+			
+		\end{columns}
+		
+	\end{frame}
+	
+	\begin{frame}{Измерение состояния}
+		
+	\end{frame}
+	
+	
+	
 \end{document}
 
